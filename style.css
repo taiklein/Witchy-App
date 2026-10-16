@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: 'Quicksand', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #fcf9f4;
+    --heading: #b9adbb;
+    --subheading: #e7ddf4;
+    --card: #f5ddd5;
+    --text: #c6b3df;
+}
+body {
+    background-color: var(--background);
+}
+header h1 {
+    font-family: 'Cinzel', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: var(--heading);
+    padding: 5px;
+}
+
+footer p {
+    font-family: 'Cinzel', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    text-align: center;
+    color: var(--heading);
+    padding: 10px;
+}
