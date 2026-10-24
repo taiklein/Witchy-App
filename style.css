@@ -37,7 +37,6 @@ header h1 {
 }
 .darkmode {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: flex-start;
     align-self: center;
     margin-left: 8px;
@@ -85,7 +84,7 @@ header h1 {
     color: var(--subheading);
 }
 .dayNumber {
-    padding: 15px 0px;
+    padding: 15px;
     font-weight: 500;
     color: var(--text);
 }
@@ -195,7 +194,68 @@ h3 {
     font-size: 1.2em;
     padding: 5px;
 }
-
+/*Log and Calendar Page*/
+.left {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin-left: 8px;
+    transition: 0.5s;
+    font-size: 20px;
+    color: var(--text);
+}
+.left :hover {
+    transform: scale(1.1);
+    color: var(--subheading);
+}
+h2 {
+    font-family: 'Cinzel', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: var(--heading);
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    margin-left: 8px;
+    transition: 0.5s;
+    font-size: 20px;
+    color: var(--text);
+}
+.right :hover {
+    transform: scale(1.1);
+    color: var(--subheading);
+}
+.calendarDayLabel {
+    font-weight: bold;
+    color: var(--subheading);
+    padding: 10px 15px;
+}
+.calendarDayNumber {
+    padding: 20px;
+    font-weight: 500;
+    color: var(--text);
+}
+.calendarHome {
+    width: 100px;
+    height: 100px;
+    background-color: #f3efe4;
+    padding: 10px 20px;
+    border-radius: 50%;
+    margin: 0px auto 15px;
+    transition: 0.5s;
+}
+.calendarHome img {
+    width: 60px;
+    height: 60px;
+}
+.calendarHome:hover {
+    transform: scale(1.1);
+}
+.calendarHome p {
+    font-size: .9em;
+    text-align: center;
+}
 footer p {
     font-family: 'Cinzel', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
