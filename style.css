@@ -88,6 +88,12 @@ header h1 {
     font-weight: 500;
     color: var(--text);
 }
+.today .dayNumber {
+    border-radius: 50%;
+    border: 3px dotted var(--subheading);
+    padding: 8px;
+    margin-top: 4px;
+}
 h3 {
     text-align: center;
     padding: 10px;
@@ -126,18 +132,50 @@ h3 {
     transform: scale(1.1);
 }
 /*Symptoms Page */
+.topsymptoms {
+    display: grid;
+    grid-template-columns: 50px 1fr 30px 100px;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 20px 30px;
+}
+.arrowleft {
+    justify-self: start;
+    font-size: 20px;
+    color: var(--text);
+    transition: 0.5s;
+}
+.arrowleft:hover {
+    transform: scale(1.1);
+    color: var(--subheading);
+}
+h3 {
+    font-family: 'Cinzel', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    text-align: center;
+}
+.arrowright {
+    justify-self: center;
+    font-size: 20px;
+    color: var(--text);
+    transition: 0.5s;
+}
+.arrowright:hover {
+    transform: scale(1.1);
+    color: var(--subheading);
+}
 .home {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    justify-self: end;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: #f3efe4;
-    margin-right: 8px;
-    margin-left: auto;
     transition: 0.5s;
 }
 .home img {
@@ -226,13 +264,34 @@ h2 {
     transform: scale(1.1);
     color: var(--subheading);
 }
+.weekdays {
+    display: flex;
+}
+.day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.calendarDayNumber.today-number {
+    border-radius: 50%;
+    border: 3px dotted var(--subheading);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: normal;
+}
 .calendarDayLabel {
     font-weight: bold;
     color: var(--subheading);
     padding: 10px 15px;
 }
 .calendarDayNumber {
-    padding: 20px;
+    display: block;
+    height: 64px;
+    padding: 15px;
     font-weight: 500;
     color: var(--text);
 }
@@ -242,7 +301,7 @@ h2 {
     background-color: #f3efe4;
     padding: 10px 20px;
     border-radius: 50%;
-    margin: 0px auto 15px;
+    margin: 10px auto 15px;
     transition: 0.5s;
 }
 .calendarHome img {
